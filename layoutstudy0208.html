@@ -5,8 +5,114 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body, html {
+      box-sizing: border-box;
+      /* overflow-x: hidden; */
+    }
+    h1, h2, p {
+      font-size: inherit;
+      line-height: 1;
+    }
+
+    #container {
+      width: 100vw;
+      height: 200vh;
+      position: relative;
+      background-color: rgb(241, 119, 110);
+    }
+    /* 배경 */
+    #background {
+      width: 100%;
+      height: 90%;
+      background-color: #fff;
+      /* 포지션 */
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      border-radius: 50px 50px 0 0;
+    }
+    /* 컨텐츠 */
+    #content {
+      width: 50vw;
+      height: 100%;
+      /* 포지션 */
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      /* border: 1px solid red; */
+      padding-top: 10vh;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* logo */
+    #content h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    /* bar */
+    #content > hr {
+      width: 100%;
+      height: 1vh;
+      background-color: rgb(241, 119, 110);
+      margin: 12vh 0;
+      border: none;
+    }
+
+    #textbox {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    #textbox > div {
+      width: 90%;
+    }
+    #textbox h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+    }
+    #textbox p {
+      margin-top: 1rem;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+  </style>
 </head>
 <body>
-  
+  <div id="container">
+    <div id="background"></div>
+    <div id="content">
+      <h1>zamong swimming pool</h1>
+      <hr>
+      <div id="textbox">
+        <hr>
+        <div>
+          <h2>sub title</h2>
+          <p>
+            스스로 온전히 자유로워지는 공간 <br>
+            마치 물속에선 중력을 벗어날수 있는것처럼 <br>
+            Shall we dive into the sky swimming pool? plop!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget eros eros. Duis nunc ligula, consectetur sit amet dictum in, bibendum ac lacus. Nulla felis nibh, viverra at purus id, sagittis tincidunt lacus. Suspendisse purus nulla, varius ut pharetra at, dictum quis nibh. Donec vel augue quis velit imperdiet consequat in sed leo. Duis ultrices sem vitae sagittis iaculis. Nulla vel est ut tortor commodo tincidunt.
+          </p>
+          <p>
+            Quisque viverra nec felis sit amet tincidunt. Praesent eu condimentum nisi, id posuere elit. Morbi hendrerit dictum nulla id malesuada. Donec volutpat, dui condimentum posuere sagittis, nisi lectus imperdiet est, ac dapibus ipsum massa ac quam. Pellentesque nec facilisis risus. Quisque ac rutrum lacus, a accumsan enim. Suspendisse auctor placerat erat. Vestibulum eget elit sed ipsum fringilla euismod. Pellentesque ultricies posuere massa, sed molestie mauris rhoncus eu. Maecenas felis nibh, sodales id bibendum vitae, rhoncus vitae ipsum.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
 </body>
 </html>
